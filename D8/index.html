@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hamburger.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="images/logo.png" /></a>
+                    </li>
+                    <li><a class="state collapse-item" href="index.html">Home</a></li>
+                    <li><a class="collapse-item" href="myproject.html">My Project</a></li>
+                    <li><a class="collapse-item" href="testimonial.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right collapse-item">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="nav-right" id="hamburger-btn">
+                <button onclick="openHamburger()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="index.html" class="containerUp">Home</a>
+            <a href="myproject.html" class="containerUp">My Project</a>
+            <div class="containerDown">
+                <a href="contact.html" class="contactme">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sleft">
+                <h1>Hi Welcome to my hut</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tristique purus orci libero egestas ut. Augue suspendisse blandit lorem massa ipsum, urna egestas mi, lacinia. Dui fusce etiam libero, lectus amet, risus molestie malesuada. Odio nam purus consectetur euismod congue leo quisque. Turpis amet sollicitudin nunc non in lectus dolor amet. Amet ullamcorper faucibus tincidunt accumsan ac adipiscing arcu. Donec tristique at proin maeceneas. Ante elit et iaculis ac sit.
+                </p>
+                <div class="contactcv">
+                    <button>contact</button>
+                    <a target="_blank" href="https://www.canva.com/">download CV<img src="images/download.PNG"></a>
+                </div>
+                <div class="socialmedia">
+                    <a href="https://www.linkedin.com"><img src="images/linkedin.png"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram.png"></a>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" ></a>
+                </div>
+            </div>
+            <div class="sright">
+                <img src="images/man.jpeg">
+                <h2>Mikhael Bani</h2>
+                <p>Fullstack Developer</p>
+            </div>
+        </div>
+        <script src="js/nav.js"></script>
+    </body>
+</html>
