@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/myproject.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/assets/css/hamburger.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="/assets/images/logo.png" /></a>
+                    </li>
+                    <li><a class="collapse-item" href="/home">Home</a></li>
+                    <li><a class="state collapse-item" href="/myproject">My Project</a></li>
+                    <li><a class="collapse-item" href="/testimonial">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right collapse-item">
+                <a href="/contact">Contact Me</a>
+            </div>
+            <div class="nav-right" id="hamburger-btn">
+                <button onclick="openHamburger()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="/home" class="containerUp">Home</a>
+            <a href="/myproject" class="containerUp">My Project</a>
+            <a href="/testimonial" class="containerUp">Testimonials</a>
+            <div class="containerDown">
+                <a href="/contact" class="contactme">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="p-5 w-75 mx-auto mt-5">
+            <a href="/addmyproject" class="text-decoration-none"><button type="submit" class="btn btn-danger d-flex my-2 buttonTop" role="button">Add New Project</button></a>
+            {{ range $index, $project := .Projects }}
+            <div class="card mb-3 bg-white">
+                <div class="row g-0 p-3">
+                  <div class="col-md-4">
+                    <img src="/assets/images/5.jpg" class="img-fluid h-100 theimg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-secondary buttonTop" role="button">Edit Project</button>
+                        <form action="/delete-project/{{$index}}" method="POST">
+                            <button type="submit" class="btn btn-danger" role="button">Delete Project</button>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                      <a href="/blog-detail/{{ $index }}" class="text-decoration-none text-reset"><h2 class="card-title">{{$project.ProjectName}}</h2></a>
+                      <p class="card-text"><small class="text-body-secondary">{{$project.StartDate}} - {{$project.EndDate}}</small></p>
+                      <p class="cardText">{{$project.Description}}</p>
+                      <p class="cardText">Technologies: {{$project.NodeJs}} {{$project.Javascript}} {{$project.ReactJs}} {{$project.SocketIO}}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <script src="/assets/js/nav.js"></script>
+    </body>
+</html>
