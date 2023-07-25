@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css" >
+        <link rel="stylesheet" href="css/myproject.css" >
+        <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="images/logo.png" /></a>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="state" href="myproject.html">My Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <form onsubmit="submitProject(event)">
+            <div>
+                <h1>ADD MY PROJECT</h1>
+                <div>
+                    <label for="input-projectname">Project Name</label>
+                    <input id="input-projectname">
+                </div>
+                <div class="oneline">
+                    <div class="sdate">
+                        <label for="start-date">Start Date</label>
+                        <input id="start-date" type="date">
+                    </div>
+                    <div>
+                        <label for="end-date">End Date</label>
+                        <input id="end-date" type="date">
+                    </div>
+                </div>
+                <div class="desc">
+                    <label for="input-description">Description</label>
+                    <textarea id="input-description" rows="7"></textarea>
+                </div>
+                <div>
+                    <label>Technologies</label>
+                    <div class="boxes">
+                        <div class="fbgroup">
+                            <div class="listboxes">
+                                <input type="checkbox" id="node-js" class="multitech">
+                                <label for="node-js">Node Js</label>
+                            </div>
+                            <div class="listboxes">
+                                <input type="checkbox" id="react-js" class="multitech">
+                                <label for="react-js">React Js</label>
+                            </div>
+                        </div>
+                        <div class="sbgroup">
+                            <div class="listboxes">
+                                <input type="checkbox" id="next-js" class="multitech">
+                                <label for="next-js">Next Js</label>
+                            </div>
+                            <div class="listboxes">
+                                <input type="checkbox" id="typescript" class="multitech">
+                                <label for="typescript">TypeScript</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upimg">
+                    <label>Upload Image</label>
+                    <div class="label-choose">
+                        <label for="input-image">
+                            <p>choose</p>
+                            <img src="images/pclip.png">
+                        </label>
+                        <input type="file" id="input-image" hidden>
+                    </div>
+                </div>
+                <button>submit</button>
+            </div>
+        </form>
+
+
+        <div class="listproject">
+            <h1>MY PROJECT</h1>
+            <div class="containerp" id="contents">
+                <div class="card">
+                    <img src="images/1.png" class="img1">
+                    <div class="app">
+                        <a href="blog.html"><h4>Dumbways Mobile App - 2021</h4></a>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                    <p class="note">App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download </p>
+                    <div class="logos">
+                        <img src="images/logo1.jpg">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <div class="card-button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/2.png" class="img1">
+                    <div class="app">
+                        <a href="blog.html"><h4>Dumbways Mobile App - 2021</h4></a>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                    <p class="note">App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download </p>
+                    <div class="logos">
+                        <img src="images/logo1.jpg">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <div class="card-button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/3.png" class="img1">
+                    <div class="app">
+                        <a href="blog.html"><h4>Dumbways Mobile App - 2021</h4></a>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                    <p class="note">App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download </p>
+                    <div class="logos">
+                        <img src="images/logo1.jpg">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <div class="card-button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/4.jpg" class="img1">
+                    <div class="app">
+                        <a href="blog.html"><h4>Dumbways Mobile App - 2021</h4></a>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                    <p class="note">App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download </p>
+                    <div class="logos">
+                        <img src="images/logo1.jpg">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <div class="card-button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/5.jpg" class="img1">
+                    <div class="app">
+                        <a href="blog.html"><h4>Dumbways Mobile App - 2021</h4></a>
+                        <p>durasi : 3 bulan</p>
+                    </div>
+                    <p class="note">App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download </p>
+                    <div class="logos">
+                        <img src="images/logo1.jpg">
+                        <img src="images/logo2.png">
+                        <img src="images/logo3.png">
+                    </div>
+                    <div class="card-button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/myproject.js"></script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contact Me</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css" >
+        <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="images/logo.png" /></a>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myproject.html">My Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <form>
+            <div>
+                <h1>GET IN TOUCH</h1>
+                <div>
+                    <label>Name</label>
+                    <input id="input-name">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input id="input-email">
+                </div>
+                <div>
+                    <label>Phone Number</label>
+                    <input id="input-phone">
+                </div>
+                <div>
+                    <label>Subject</label>
+                    <select id="input-subject">
+                        <option value="" hidden></option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Fullstack Developer">Fullstack Developer</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Your Message</label>
+                    <textarea id="input-message" rows="5"></textarea>
+                </div>
+                <button type="button" onclick="submitData()">submit</button>
+            </div>
+        </form>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
