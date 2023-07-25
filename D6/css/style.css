@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+nav {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    height: 65px;
+}
+
+body {
+    background-color: rgba(205, 210, 215, 0.67);
+}
+
+.nav-left {
+    flex: 40%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: large;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a img {
+    width: 50px;
+    height: 32px;
+    margin-top: 7px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+nav ul li .state {
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 65px;
+    width: 100%;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 7px 22px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin: 110px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px gray;
+}
+
+.sleft {
+    flex: 70%;
+    margin: 50px;
+    align-items: center;
+}
+
+.container .sleft p {
+    text-align: justify;
+}
+
+.contactcv {
+    margin: 45px 0px;
+}
+
+.contactcv button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.contactcv a {
+    color: black;
+    text-decoration: none;
+}
+
+.contactcv a img {
+    width: 20px;
+    padding-left: 5px;
+    margin-left: 7px;
+}
+
+.socialmedia a {
+    margin-right: 2px;
+}
+
+.socialmedia a img {
+    padding: 7px;
+    height: 32px;
+}
+
+.sright {
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px lightgray;
+}
+
+.sright img {
+    height: 370px;
+    width: 355px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sright h2 {
+    margin-bottom: -10px;
+}
+
+.sright p {
+    font-size: small;
+}
+
+@media only screen and (max-width : 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sright {
+        margin: auto;
+    }
+
+    .socialmedia {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width : 901px) {
+    /*nav {
+        background-color: rgb(240, 240, 240);       
+    }*/
+
+    #hamburger-btn {
+        display: none;
+    }
+}
