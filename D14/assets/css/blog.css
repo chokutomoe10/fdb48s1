@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins';
+}
+
+.top {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.containercontent {
+    margin: 50px 70px;
+}
+
+.headcontainer {
+    display: flex;
+}
+
+.c-left img {
+    height: 500px;
+    width: 800px;
+}
+
+.c-right {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 80px 10px;
+}
+
+.dur {
+    margin-bottom: 12px;
+}
+
+.dline1 img {
+    height: 50px;
+}
+
+.dline1, .dline2 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.dline2 img {
+    height: 40px;
+    margin-left: 5px;
+}
+
+.dline2 p {
+    margin-left: 5px;
+}
+
+.tech {
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.techno {
+    display: flex;
+    flex-direction: column;
+}
+
+.listtech1, .listtech2, .listtech3, .listtech4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.listtech1 img, .listtech3 img{
+    height: 50px;
+}
+
+.listtech2 {
+    margin-left: 50px;
+}
+
+.listtech4 {
+    margin-left: 53px;
+}
+
+.listtech2 img, .listtech4 img {
+    height: 45px;
+}
+
+.content-blog {
+    margin-top: 30px;
+    text-align: justify;
+}
