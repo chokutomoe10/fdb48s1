@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonials</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/new.css">
+        <link rel="stylesheet" href="/assets/css/testimonial.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/assets/css/hamburger.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="/assets/images/logo.png" /></a>
+                    </li>
+                    <li><a class="collapse-item" href="/home">Home</a></li>
+                    <li><a class="collapse-item" href="/addmyproject">Add Project</a></li>
+                    <li><a class="state collapse-item" href="/testimonial">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right1 collapse-item">
+                <a class="first-right" href="/register">Register</a>
+            </div>
+            <div class="nav-right1 collapse-item">
+                <a class="first-right" href="/login">Login</a>
+            </div>
+            <div class="nav-right2 collapse-item">
+                <a class="second-right" href="/contact">Contact Me</a>
+            </div>
+            <div class="nav-right" id="hamburger-btn">
+                <button onclick="openHamburger()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="/home" class="containerUp">Home</a>
+            <a href="/addmyproject" class="containerUp">Add Project</a>
+            <a href="/testimonial" class="containerUp">Testimonials</a>
+            <div class="containerDown">
+                <a href="/contact" class="contactme">Contact Me</a>
+            </div>
+        </div>
+
+        
+        <div class="testimonial-container">
+            <h1>My Testimonials</h1>
+            <h2 class="rating-title">Rating By Star</h2>
+            <div>
+                <button class="rating-btn" onclick="allTestimonial()">
+                    All
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(1)">
+                    1 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(2)">
+                    2 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(3)">
+                    3 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(4)">
+                    4 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonial(5)">
+                    5 <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
+            <div class="testimonials" id="testimonials"></div>
+        </div>
+        <script src="/assets/js/nav.js"></script>
+        <script src="/assets/js/ajax.js"></script>
+    </body>
+</html>
