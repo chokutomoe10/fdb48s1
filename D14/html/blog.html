@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/contact.css">
+        <link rel="stylesheet" href="/assets/css/addmyproject.css">
+        <link rel="stylesheet" href="/assets/css/blog.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="https://dumbways.id/" target="_blank"><img src="/assets/images/logo.png" /></a>
+                    </li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/addmyproject">Add Project</a></li>
+                    <li><a class="collapse-item" href="/testimonial">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="/contact">Contact Me</a>
+            </div>
+        </nav>
+
+        <h1 class="top">{{ .Project.ProjectName }}</h1>
+        <div class="containercontent">
+            <div class="headcontainer">
+                <div class="c-left">
+                    <img src="/assets/images/5.jpg">
+                </div>
+                <div class="c-right">
+                    <h2 class="dur">Duration</h2>
+                    <div class="dline1">
+                        <img src="/assets/images/calendar.svg">
+                        <p>{{.Project.StartDate}} - {{.Project.EndDate}}</p>
+                    </div>
+                    <h2 class="tech">Technologies</h2>
+                    <div class="techno">
+                        <div class="group">
+                            <div class="listtech1">
+                                <img src="/assets/images/reactjs.png">
+                                <p>{{.Project.ReactJs}}</p>
+                            </div>
+                            <div class="listtech2">
+                                <img src="/assets/images/javascript.svg">
+                                <p>{{.Project.Javascript}}</p>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="listtech3">
+                                <img src="/assets/images/nodejs.png">
+                                <p>{{.Project.NodeJs}}</p>
+                            </div>
+                            <div class="listtech4">
+                                <img src="/assets/images/socket_io.png">
+                                <p>{{.Project.SocketIO}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-blog">
+                ID : {{ .Id }}
+            </div>
+            <div class="content-blog">
+                <p>
+                    {{ .Project.Description }}
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
